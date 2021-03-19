@@ -16,46 +16,47 @@ users.forEach(user => {
             <div class="user" id="user${user.id}">
                 <div class="media__top">
 
-                <div class="user__l1-logo">
-                    <image class="user__l2-logo" src="${user.logo}" alt="company name"> </image>
-                </div>
+                
+                    <div class="user__l1-logo">
+                        <image class="user__l2-logo" src="${user.logo}" alt="company name"> </image>
+                    </div>
+                
 
+                    <div class="user__l1-company">
+                        <div class="user__l2-company">
+                            ${user.company}
+                        </div>
 
-                <div class="user__l1-company">
-                    <div class="user__l2-company">
-                        ${user.company}
+                        <div class="user__l2-new user__l2-notifications hidden">
+                            NEW!
+                        </div>
+
+                        <div class="user__l2-featured user__l2-notifications hidden">
+                            FEATURED
+                        </div>
                     </div>
 
-                    <div class="user__l2-new user__l2-notifications hidden">
-                        NEW!
+
+                    <div class="user__l1-position">
+                        <div class="user__l2-position">
+                            ${user.position}
+                        </div>
                     </div>
 
-                    <div class="user__l2-featured user__l2-notifications hidden">
-                        FEATURED
+
+                    <div class="user__l1-information">
+                        <div class="user__l2-posted">
+                            ${user.postedAt}
+                        </div>
+
+                        <div class="user__l2-contract">
+                            ${user.contract}
+                        </div>
+
+                        <div class="user__l2-location">
+                            ${user.location}
+                        </div>
                     </div>
-                </div>
-
-
-                <div class="user__l1-position">
-                    <div class="user__l2-position">
-                        ${user.position}
-                    </div>
-                </div>
-
-
-                <div class="user__l1-information">
-                    <div class="user__l2-posted">
-                        ${user.postedAt}
-                    </div>
-
-                    <div class="user__l2-contract">
-                        ${user.contract}
-                    </div>
-
-                    <div class="user__l2-location">
-                        ${user.location}
-                    </div>
-                </div>
 
                 </div>
 
